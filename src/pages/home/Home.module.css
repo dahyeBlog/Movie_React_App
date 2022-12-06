@@ -8,7 +8,7 @@
   width: 100%;
 }
 
-.posterImage__overlay {
+.posterImage__overlay{
   position: absolute;
   padding: 5rem;
   bottom: 0px;
@@ -21,18 +21,19 @@
   background-image: linear-gradient(rgb(0,0,0,0), rgb(0,0,0,1));
   opacity: 1;
   transition: opacity .3s;
-}   
+}
 
 .posterImage__overlay:hover {
   opacity: 1;
 }
 
-.posterImage__title {
+.posterImage__title{
   font-weight: 900;
   font-size: 4rem;
   margin-bottom: 0.4rem;
   text-align: left;
 }
+
 
 .posterImage__runtime {
   font-size: 2rem;
@@ -41,6 +42,10 @@
 
 .posterImage__rating {
   margin-left: 3rem;
+}
+
+.posterImage__rating i {
+  margin-left: 1rem;
 }
 
 .posterImage__description {

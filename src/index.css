@@ -3,12 +3,11 @@
   padding: 0;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&family=Nanum+Gothic:wght@400;700;800&family=Vidaloka&display=swap');
+
 html, body, #root ,.App {
   min-height: 100%;
-}
+  background:#646C94;
+  font-family: 'Montserrat', sans-serif;
 
-.App {
-  background-color: black;
-  color: white;
-  font-family: sans-serif;
 }

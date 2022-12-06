@@ -1,22 +1,26 @@
 import React,{useState, useEffect} from 'react'
-import classes from './Card.module.css'
-import { Link } from 'react-router-dom'
 import Skeleton, { SkeletonTheme } from 'react-loading-skeleton'
+import { Link } from 'react-router-dom';
+import classes from './Card.module.css'
 
 const Card = ({movie}) => {
   const [isLoading, setIsLoading] = useState(true)
 
+  console.log(movie);
+  
+
   useEffect(() => {
-  setTimeout(() => {
-      setIsLoading(false)
-  }, 1500);
-  }, [])
+    setTimeout(() => {
+        setIsLoading(false)
+    }, 1500);
+    }, [])
+    
 
-
-  return  <>
-  {
-      isLoading ? 
-      <div className={classes.cards}>
+  return (
+    <>
+     {
+     isLoading ? 
+     <div className={classes.cards}>
           <SkeletonTheme color="#202020" highlightColor="#444">
           <Skeleton height={300} duration={2} />
           </SkeletonTheme>
@@ -35,9 +39,9 @@ const Card = ({movie}) => {
           </div>
         </div>
       </Link>
-      
-        }
-      </>
+     } 
+    </>
+  )
 }
 
 export default Card
