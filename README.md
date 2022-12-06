@@ -1,5 +1,7 @@
 # REACT 영화 검색 사이트 만들기
 
+[사이트 바로가기] (https://dahyeblog.github.io/Movie_React_App/index.html)
+
 ## 배운 내용
 - REACT ROUTER의 사용법을 배울 수 있었다.
 - API를 가져와서 사용하는 법을 익히도록 했다.
