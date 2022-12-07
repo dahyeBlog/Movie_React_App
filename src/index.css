@@ -1,13 +1,23 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&family=Nanum+Gothic:wght@400;700;800&family=Vidaloka&display=swap');
 
-html, body, #root ,.App {
-  min-height: 100%;
-  background:#646C94;
-  font-family: 'Montserrat', sans-serif;
 
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+html, body {
+  /* max-width: 100vw; */
+  width: 100vw;
+  margin: 0 auto;
+  min-height: 100%;
+  box-sizing: border-box;
+  background:#eeeeee;
+  color: #06113C;
+  font-family: 'Nanum', sans-serif;
 }

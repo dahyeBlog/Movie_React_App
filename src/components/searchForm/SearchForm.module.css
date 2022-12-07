@@ -1,0 +1,37 @@
+.form__container{
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+
+}
+
+.search__form{
+  width: 90vw;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+
+.search__form h2 {
+  font-size: 30px;
+}
+
+.form__input{
+  width: 50%;
+  margin-top: 2rem;
+  border: transparent;
+  max-width: 600px;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  color: #333;
+  margin-top: 1rem;
+  letter-spacing: 0.1rem;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+} 
+
