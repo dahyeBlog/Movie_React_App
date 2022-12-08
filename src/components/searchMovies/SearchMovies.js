@@ -3,11 +3,9 @@ import { useGlobalContext } from '../../context/context';
 import classes from './SearchMovies.module.css'
 import { Link } from 'react-router-dom';
 
-
-
 const SearchMovies = () => {
   const {movies, isLoading} = useGlobalContext()
-
+  
   if(isLoading) {
     return <div className={classes.loading}></div>
   }
