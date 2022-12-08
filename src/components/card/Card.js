@@ -5,10 +5,11 @@ import { SkeletonTheme } from 'react-loading-skeleton'
 import { useGlobalContext } from '../../context/context'
 import { Link } from 'react-router-dom'
 
-const Card = ({movies}) => {
+const Card = ({movies,index}) => {
   const {isLoading,setIsLoading} = useGlobalContext()
-  
-  // console.log(movie);
+  const indexNum = index + 1
+
+  // console.log(indexNum);
   
   useEffect(() => {
     setTimeout(() => {
@@ -28,7 +29,10 @@ const Card = ({movies}) => {
       </div> 
       :
       <Link to={`/movie/${movies.id}`} style={{textDecoration:"none", color:"white"}}>
+
+      <p className={classes.indexNum}>{indexNum}</p>
         <div className={classes.cards}>
+        
           <img className={classes.cards__img} src={`https://image.tmdb.org/t/p/original${movies ? movies.poster_path : ""}`} />
        
         </div>
