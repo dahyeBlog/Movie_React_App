@@ -20,7 +20,7 @@ const Movie = () => {
     getData();
   }, []);
 
-  console.log(movieDetail);
+  // console.log(movieDetail);
 
   return (
     <div className={classes.movie}>

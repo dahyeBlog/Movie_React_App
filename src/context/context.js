@@ -1,4 +1,4 @@
-import React,{useState, useContext, useEffect} from 'react'
+import React,{useState, useContext} from 'react'
 import useFetch from '../useFetch/useFetch'
 
 const AppContext = React.createContext()
@@ -8,10 +8,10 @@ export const API_ENDPINT =`https://api.themoviedb.org/3/movie/popular?api_key=${
 
 const AppProvider = ({children}) => {
   const [query, setQuery] = useState('아이언맨')  
-  const {isLoading, error, data: movies} = useFetch(`&query=${query}`)
+  const {isLoading,setIsLoading, error, data: movies} = useFetch(`&query=${query}`)
   
   return (
-    <AppContext.Provider value={{query,setQuery,isLoading,error,movies}}>
+    <AppContext.Provider value={{query,setQuery,isLoading,setIsLoading,error,movies}}>
       {children}
     </AppContext.Provider>
   )

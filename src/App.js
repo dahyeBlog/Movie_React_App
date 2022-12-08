@@ -9,6 +9,7 @@ const App = () => {
 
 
   return (
+      <>
 
       <BrowserRouter>
        <Header />
@@ -20,7 +21,8 @@ const App = () => {
 
         </Routes>
       </BrowserRouter>
-
+        
+      </>
             
   
   )

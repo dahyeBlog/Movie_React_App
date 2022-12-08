@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react'
+import {useState,useEffect} from 'react'
 const apiKey = '04d3d1d7381fc6a469d9a3c3368d88de'
 const API_SEARCH_ENDPINT =`https://api.themoviedb.org/3/search/movie/?api_key=${apiKey}&language=ko-KR`
 
@@ -18,8 +18,7 @@ const useFetch = (urlParams) => {
       } else {
         setError({show: true, msg: data.Error})
       }
-      
-
+    
       setIsLoading(false)
     } catch (error) {
       console.log(error);
@@ -34,7 +33,7 @@ const useFetch = (urlParams) => {
     fetchMovies(`${API_SEARCH_ENDPINT}${urlParams}`)
   }, [urlParams])
 
-  return {isLoading,error,data}
+  return {isLoading,setIsLoading,error,data}
 }
 
 export default useFetch
