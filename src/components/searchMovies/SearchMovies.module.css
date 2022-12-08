@@ -1,5 +1,5 @@
 
-.loading {
+ .loading {
   width: 6rem;
   height: 6rem;
   margin: 0 auto;
@@ -14,7 +14,7 @@
   to {
     transform: rotate(360deg);
   }
-}
+} 
 
 
 .movies{
